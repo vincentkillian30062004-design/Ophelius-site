@@ -1156,8 +1156,16 @@ main { flex: 1; }
 .team-card-body { padding: 24px 20px; flex: 1; }
 
 @media (max-width: 600px) {
-  .team-card { flex-direction: column; }
-  .team-card img { width: 50%; max-width: 180px; height: auto; object-fit: unset; object-position: unset; margin: 24px auto 0; display: block; }
+  .team-card, .team-card--reverse { flex-direction: column !important; }
+  .team-card img {
+    width: 50% !important;
+    max-width: 180px !important;
+    height: auto !important;
+    object-fit: fill !important;
+    object-position: unset !important;
+    margin: 24px auto 0 !important;
+    display: block !important;
+  }
   .team-card-placeholder { width: 100%; height: 180px; border-right: none; border-bottom: 1px solid var(--border); }
 }
 
