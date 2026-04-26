@@ -623,10 +623,10 @@ main { flex: 1; }
 .service-list-item:nth-child(even) .service-num { text-align: left; }
 
 .service-num {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: clamp(64px, 8vw, 96px);
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 300;
+  font-style: normal;
   color: var(--gold);
   opacity: 0.35;
   line-height: 1;
