@@ -1328,6 +1328,21 @@ main { flex: 1; }
    ============================================================ */
 @media (max-width: 900px) {
   .services-grid { grid-template-columns: 1fr; gap: 32px; }
+  .service-list-item,
+  .service-list-item:nth-child(even) {
+    flex-direction: column !important;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 40px 16px;
+  }
+  .service-num {
+    font-size: 40px !important;
+    width: auto !important;
+    text-align: left !important;
+    opacity: 0.5 !important;
+  }
+  .service-list-item:nth-child(even) .service-num { text-align: left !important; }
+  .service-list-desc { color: rgba(255,255,255,0.75) !important; }
   .contact-inner { grid-template-columns: 1fr; gap: 40px; }
   .footer-inner { grid-template-columns: 1fr; gap: 24px; }
   .img-grid-2 { grid-template-columns: 1fr; }
