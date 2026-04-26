@@ -113,6 +113,7 @@ main { flex: 1; }
   letter-spacing: 0.04em;
   text-transform: uppercase;
   transition: color 0.2s;
+  text-decoration: none;
 }
 
 .site-nav a:hover,
@@ -154,6 +155,7 @@ main { flex: 1; }
   font-size: 24px;
   font-family: 'Crimson Text', serif;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 .mobile-menu a:hover { color: var(--gold); opacity: 1; }
 .mobile-close {
