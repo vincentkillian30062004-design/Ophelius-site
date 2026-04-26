@@ -619,8 +619,13 @@ main { flex: 1; }
 
 .service-list-item:last-child { border-bottom: 1px solid var(--border); }
 
-.service-list-item:nth-child(even) { background: #fafaf8; }
+.service-list-item:nth-child(even) {
+  background: #fafaf8;
+  flex-direction: row-reverse;
+}
 .service-list-item:nth-child(even):hover { background: #fdfcfa; }
+.service-list-item:nth-child(even) .service-num { text-align: left; }
+.service-list-item:nth-child(even) .service-divider { order: 0; }
 
 .service-num {
   min-width: 40px;
