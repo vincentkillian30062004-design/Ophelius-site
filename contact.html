@@ -92,7 +92,7 @@
             Thank you! Your message has been sent. We'll get back to you within 24 hours.
           </div>
 
-          <form class="contact-form" id="contact-form" novalidate>
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/mwvazand" method="POST" novalidate>
             <div class="form-group">
               <label for="contact-name">Name <span class="form-required" aria-hidden="true">*</span></label>
               <input type="text" id="contact-name" name="name" required maxlength="100" autocomplete="name" placeholder="Your name">
@@ -178,7 +178,7 @@
     const form = document.getElementById('contact-form');
     const formSuccess = document.getElementById('form-success');
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const name = form.querySelector('#contact-name').value.trim();
       const email = form.querySelector('#contact-email').value.trim();
@@ -189,9 +189,24 @@
         return;
       }
 
-      // Show success message
-      form.style.display = 'none';
-      formSuccess.style.display = 'block';
+      const btn = form.querySelector('.form-submit');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      const res = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+
+      if (res.ok) {
+        form.style.display = 'none';
+        formSuccess.style.display = 'block';
+      } else {
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+        alert('Something went wrong. Please try again or email us directly.');
+      }
     });
   </script>
 </body>
