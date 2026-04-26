@@ -433,10 +433,14 @@ main { flex: 1; }
 }
 
 .results-cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin-bottom: 32px;
+}
+
+@media (max-width: 700px) {
+  .results-cards { grid-template-columns: 1fr; }
 }
 
 .result-card {
