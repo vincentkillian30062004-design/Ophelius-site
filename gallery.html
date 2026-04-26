@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services - Ophelius Marketing</title>
+  <meta name="description" content="Full-suite marketing services tailored to local and regional businesses in Budapest — built to drive real growth, not just visibility.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .gallery-hero {
+      background: #0a0a0a;
+      width: 100%;
+      padding: 120px 28px 56px;
+      text-align: center;
+    }
+    .gallery-hero p {
+      margin: 0 0 16px;
+      font-family: Georgia, serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c9a96e;
+    }
+    .gallery-hero h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: clamp(2rem, 5vw, 38px);
+      line-height: 1.1;
+      font-weight: 500;
+      color: #f5f2eb;
+    }
+    .gallery-hero h2 {
+      margin: 6px 0 0;
+      font-family: Georgia, serif;
+      font-size: clamp(2rem, 5vw, 38px);
+      line-height: 1.1;
+      font-weight: 500;
+      color: #f5f2eb;
+    }
+    .gallery-hero-rule {
+      width: 44px;
+      height: 1px;
+      background: #c9a96e;
+      margin: 28px auto 24px;
+    }
+    .gallery-hero-desc {
+      margin: 0 auto;
+      font-family: Georgia, serif;
+      font-size: 15px;
+      line-height: 1.85;
+      color: #cfc7ba;
+      max-width: 500px;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+      background: #0a0a0a;
+      padding: 32px 28px;
+    }
+    .portfolio-grid img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+    .why-pay-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 640px;
+      margin: 0 auto 48px;
+    }
+    .why-pay-stat {
+      border: 1px solid #d8cfbc;
+      border-bottom: none;
+      padding: 24px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+    }
+    .why-pay-stat:last-of-type { border-bottom: 1px solid #d8cfbc; }
+    .why-pay-stat:nth-child(even) { background: #f9f8f5; }
+    .why-pay-stat-label {
+      font-family: Georgia, serif;
+      font-size: 14px;
+      color: #444;
+    }
+    .why-pay-stat-value {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: #c9a84c;
+    }
+    @media (max-width: 768px) {
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .portfolio-grid img { height: 280px; }
+    }
+  </style>
+</head>
+<body class="page-wrap">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Ophelius Marketing">
+        <img src="assets/images/cropped-cropped-LOGO-1-1-365x122.png" alt="Ophelius Marketing" width="180">
+      </a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Posts</a></li>
+          <li><a href="gallery.html" class="active">Services</a></li>
+          <li><a href="biography.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile Navigation">
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Posts</a>
+    <a href="gallery.html">Services</a>
+    <a href="biography.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- HERO -->
+    <section class="gallery-hero">
+      <p>Ophelius Marketing Agency</p>
+      <h1>Marketing that moves</h1>
+      <h2>Budapest <em style="font-style:italic; color:#c9a96e">forward.</em></h2>
+      <div class="gallery-hero-rule"></div>
+      <p class="gallery-hero-desc">We help local and regional businesses grow through strategic marketing, compelling content, and measurable results.</p>
+    </section>
+
+    <!-- PORTFOLIO IMAGE GRID -->
+    <div class="portfolio-grid">
+      <img src="assets/images/3c01a800677d6fb3d1fa7673c0aaafd1-1-1.jpg" alt="Ophelius marketing work">
+      <img src="assets/images/8de6af238b55efa260d68169d87cf253-1.jpg" alt="Ophelius marketing work" style="display:block;">
+      <img src="assets/images/71db232628b89396a90413aa5afaf9da-2.jpg" alt="Ophelius marketing work" style="display:block;">
+    </div>
+
+    <!-- SERVICES LIST -->
+    <section class="services-list-section">
+      <div class="section-heading-center">
+        <p class="section-sublabel">Our Expertise</p>
+        <h2 class="section-title">What We Do</h2>
+        <div class="section-rule"></div>
+        <p class="section-subtitle">We offer a full suite of marketing services tailored to local and regional businesses — built to drive real growth, not just visibility.</p>
+      </div>
+
+      <div class="services-list">
+
+        <div class="service-list-item">
+          <div class="service-num">01</div>
+          <div class="service-divider"></div>
+          <div>
+            <h3 class="service-list-title">Social Media Management</h3>
+            <p class="service-list-desc">Instagram &amp; TikTok strategy, content creation, and community management — built to grow your brand organically and turn followers into loyal customers across every platform.</p>
+          </div>
+        </div>
+
+        <div class="service-list-item">
+          <div class="service-num">02</div>
+          <div class="service-divider"></div>
+          <div>
+            <h3 class="service-list-title">Google Ads &amp; Search</h3>
+            <p class="service-list-desc">Paid search campaigns and Google Maps optimization that put your business at the top of results when customers are actively searching for exactly what you offer.</p>
+          </div>
+        </div>
+
+        <div class="service-list-item">
+          <div class="service-num">03</div>
+          <div class="service-divider"></div>
+          <div>
+            <h3 class="service-list-title">SEO &amp; Analytics</h3>
+            <p class="service-list-desc">Technical SEO audits, competitor research via SEMrush, and full Google Analytics setup — so you can track every meaningful conversion and understand exactly where your growth comes from.</p>
+          </div>
+        </div>
+
+        <div class="service-list-item">
+          <div class="service-num">04</div>
+          <div class="service-divider"></div>
+          <div>
+            <h3 class="service-list-title">Brand Identity</h3>
+            <p class="service-list-desc">Complete branding from visual identity and logo to tone of voice and messaging — crafted for a multilingual, international Budapest audience and built to last.</p>
+          </div>
+        </div>
+
+        <div class="service-list-item">
+          <div class="service-num">05</div>
+          <div class="service-divider"></div>
+          <div>
+            <h3 class="service-list-title">Creative Direction &amp; Content</h3>
+            <p class="service-list-desc">Visually compelling content strategies, photo direction, and creative campaigns that authentically tell your brand story — and give audiences a genuine reason to engage and return.</p>
+          </div>
+        </div>
+
+        <div class="service-list-item" style="border-bottom: 1px solid #d8cfbc;">
+          <div class="service-num">06</div>
+          <div class="service-divider"></div>
+          <div>
+            <h3 class="service-list-title">Web Design &amp; Development</h3>
+            <p class="service-list-desc">Clean, fast, conversion-focused websites built to represent your brand with confidence — designed to guide visitors naturally toward becoming paying clients.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECOND PORTFOLIO GRID -->
+    <div class="portfolio-grid">
+      <img src="assets/images/d2bae3be6d106dfadf1484bb7900a8a3-1.jpg" alt="Ophelius work">
+      <img src="assets/images/f446446792075c5fa6919fb4cc3fd1a6-1-1.jpg" alt="Ophelius work" style="display:block;">
+      <img src="assets/images/f3f1f6803c95db5350ce443ad6b670c9-1.jpg" alt="Ophelius work" style="display:block;">
+    </div>
+
+    <!-- WHY IT PAYS OFF -->
+    <section class="why-pay-section">
+      <div class="section-heading-center">
+        <p class="section-sublabel">The Business Case</p>
+        <h2 class="section-title">Why It Pays Off</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="why-pay-body">
+        <p>Most businesses in Budapest are invisible online — not because their product or service is lacking, but because nobody has built the digital presence they deserve. That's exactly the gap Ophelius fills.</p>
+        <p>We don't sell impressions. We build audiences, drive footfall, and increase revenue. Every strategy we create is designed to pay for itself many times over.</p>
+      </div>
+
+      <div class="why-pay-stats">
+        <div class="why-pay-stat">
+          <span class="why-pay-stat-label">Average revenue increase across clients</span>
+          <span class="why-pay-stat-value">+50%</span>
+        </div>
+        <div class="why-pay-stat">
+          <span class="why-pay-stat-label">Maximum revenue uplift recorded</span>
+          <span class="why-pay-stat-value">+77%</span>
+        </div>
+        <div class="why-pay-stat">
+          <span class="why-pay-stat-label">Views on best-performing organic post</span>
+          <span class="why-pay-stat-value">300K</span>
+        </div>
+        <div class="why-pay-stat">
+          <span class="why-pay-stat-label">Ad spend required for these results</span>
+          <span class="why-pay-stat-value">€0</span>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:48px;">
+        <a href="contact.html" style="display:inline-block; background:#1b1b1b; color:#fff; font-family:'Plus Jakarta Sans',sans-serif; font-size:15px; font-weight:600; padding:14px 36px; border-radius:4px; letter-spacing:0.04em; transition:background 0.2s;">Start Growing Today</a>
+      </div>
+    </section>
+
+    <!-- WORD TICKER -->
+    <section class="word-ticker-section">
+      <div class="word-ticker-track">
+        <span>Branding</span><span class="ticker-dot">&#8226;</span>
+        <span>Social Media Management</span><span class="ticker-dot">&#8226;</span>
+        <span>Marketing</span><span class="ticker-dot">&#8226;</span>
+        <span>Search Engine Optimization</span><span class="ticker-dot">&#8226;</span>
+        <span>Meta Ads</span><span class="ticker-dot">&#8226;</span>
+        <span>Google Ads</span><span class="ticker-dot">&#8226;</span>
+        <span>Branding</span><span class="ticker-dot">&#8226;</span>
+        <span>Social Media Management</span><span class="ticker-dot">&#8226;</span>
+        <span>Marketing</span><span class="ticker-dot">&#8226;</span>
+        <span>Search Engine Optimization</span><span class="ticker-dot">&#8226;</span>
+        <span>Meta Ads</span><span class="ticker-dot">&#8226;</span>
+        <span>Google Ads</span><span class="ticker-dot">&#8226;</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Ophelius Marketing</div>
+        <div class="footer-copyright">
+          <p>Copyright &copy; 2026 Ophelius Marketing</p>
+          <p>Powered by Ophelius Marketing</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Email</h3>
+        <p><a href="mailto:info@ophelius-marketing.com">info@ophelius-marketing.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Phone</h3>
+        <p><a href="tel:+36306295323">+36 30-629-5323</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) header.classList.add('scrolled');
+    });
+
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      navToggle.setAttribute('aria-expanded', 'true');
+    });
+    mobileClose.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  </script>
+</body>
+</html>

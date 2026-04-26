@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - Ophelius Marketing</title>
+  <meta name="description" content="Meet the team driving strategy, creativity, and execution behind Ophelius Marketing — built in Budapest, built for businesses that want to matter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Ticker / logo carousel */
+    .logo-ticker {
+      background: #f4f1eb;
+      padding: 40px 0;
+      overflow: hidden;
+      border-top: 1px solid #d8cfbc;
+      border-bottom: 1px solid #d8cfbc;
+    }
+    .ticker-label {
+      text-align: center;
+      font-family: Georgia, serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: #c9a96e;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .ticker-track {
+      display: flex;
+      gap: 80px;
+      align-items: center;
+      animation: ticker-scroll 20s linear infinite;
+      width: max-content;
+    }
+    .ticker-track img {
+      height: 40px;
+      width: auto;
+      opacity: 0.55;
+      filter: grayscale(100%);
+      transition: opacity 0.3s, filter 0.3s;
+    }
+    .ticker-track img:hover { opacity: 1; filter: none; }
+    @keyframes ticker-scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .ticker-wrap {
+      overflow: hidden;
+      position: relative;
+    }
+    .ticker-wrap::before,
+    .ticker-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 80px;
+      z-index: 2;
+    }
+    .ticker-wrap::before { left: 0; background: linear-gradient(to right, #f4f1eb, transparent); }
+    .ticker-wrap::after  { right: 0; background: linear-gradient(to left, #f4f1eb, transparent); }
+  </style>
+</head>
+<body class="page-wrap">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Ophelius Marketing">
+        <img src="assets/images/cropped-cropped-LOGO-1-1-365x122.png" alt="Ophelius Marketing" width="180">
+      </a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Posts</a></li>
+          <li><a href="gallery.html">Services</a></li>
+          <li><a href="biography.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile Navigation">
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Posts</a>
+    <a href="gallery.html">Services</a>
+    <a href="biography.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <p class="page-hero-label">Ophelius Marketing Agency</p>
+      <h1>About Us</h1>
+      <div class="page-hero-rule"></div>
+      <p class="page-hero-desc">Meet the team driving strategy, creativity, and execution behind Ophelius.</p>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="story-section">
+      <div class="story-header">
+        <h2>Our Story</h2>
+        <div class="story-rule"></div>
+      </div>
+
+      <div class="story-body">
+        <div class="story-content">
+
+          <h3>Built in Budapest. Built for businesses that want to matter.</h3>
+
+          <p>Ophelius was founded in 2025 with one clear belief: small and medium-sized businesses deserve the same level of strategic marketing power as the world's biggest brands.</p>
+
+          <p>With a team of exceptional individuals from finance, marketing and computer science, the businesses that win are the ones people remember, talk about, and return to.</p>
+
+          <p>Our role is to make that happen with precision — creating marketing that doesn't just look good, but drives awareness, increases footfall, and turns attention into measurable growth.</p>
+
+          <p>Every strategy we build is designed for Budapest's dynamic, multilingual, tourism-rich market — modern, intentional, and focused on real business impact.</p>
+
+          <div class="story-divider"></div>
+
+          <h4 class="languages-heading">We speak your guests' language</h4>
+
+          <p class="languages-intro">With a multilingual team, we help brands connect with local, international, and tourist-facing audiences across Budapest and beyond.</p>
+
+          <p class="languages-list">
+            🇭🇺 Hungarian &nbsp;&nbsp; 🇬🇧 English &nbsp;&nbsp; 🇩🇪 German<br>
+            🇹🇷 Turkish &nbsp;&nbsp; 🇷🇺 Russian
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team-section">
+      <div class="team-header">
+        <p>The People Behind It</p>
+        <div class="team-rule"></div>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-card-placeholder">Image</div>
+          <div class="team-card-body">
+            <p class="team-card-num">01</p>
+            <h3 class="team-card-name">Vincent Killian</h3>
+            <p class="team-card-role">Business Consultant &amp; Co-Founder</p>
+            <p class="team-card-bio">Bachelor's in Business from Budapest University of Business and Economics. Specialises in strategy, client relations, and growth consulting for SMEs across Budapest.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-placeholder">Image</div>
+          <div class="team-card-body">
+            <p class="team-card-num">02</p>
+            <h3 class="team-card-name">Fatima Abbasova</h3>
+            <p class="team-card-role">Marketing Specialist &amp; Co-Founder</p>
+            <p class="team-card-bio">Bachelor's in Marketing from Corvinus University. Previously Marketing Specialist at BOSCH Power Tools. Expert in social media growth and multilingual brand strategy.</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-card-placeholder">Image</div>
+          <div class="team-card-body">
+            <p class="team-card-num">03</p>
+            <h3 class="team-card-name">Philipp Bennet</h3>
+            <p class="team-card-role">IT Specialist &amp; AI Manager</p>
+            <p class="team-card-bio">Master's in Computer Science with a focus on AI. The operational backbone — ensuring our tools, data, and digital infrastructure run flawlessly at all times.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- VALUES / MISSION STRIP -->
+    <section style="background:#000; padding:80px 24px; text-align:center;">
+      <div style="max-width:700px; margin:0 auto;">
+        <p style="font-family:Georgia,serif; font-size:11px; letter-spacing:0.2em; color:#c9a84c; text-transform:uppercase; margin:0 0 20px;">Our Mission</p>
+        <p style="font-family:'Playfair Display',Georgia,serif; font-size:clamp(22px,4vw,38px); font-style:italic; font-weight:300; color:#c9a84c; line-height:1.6; margin:0 0 40px;">"We don't just understand marketing — we understand Budapest."</p>
+        <p style="font-family:Georgia,serif; font-size:16px; color:#cfc7ba; line-height:1.9; margin:0 0 40px;">We exist to give ambitious local businesses the same marketing firepower as global brands — without the global agency price tag, and with a team that actually understands your city, your customers, and your language.</p>
+        <a href="contact.html" style="display:inline-block; background:#c9a84c; color:#000; font-family:'Plus Jakarta Sans',sans-serif; font-size:15px; font-weight:600; padding:14px 36px; border-radius:4px; letter-spacing:0.04em;">Work With Us</a>
+      </div>
+    </section>
+
+    <!-- WORD TICKER -->
+    <section class="word-ticker-section">
+      <div class="word-ticker-track">
+        <span>Branding</span><span class="ticker-dot">&#8226;</span>
+        <span>Social Media Management</span><span class="ticker-dot">&#8226;</span>
+        <span>Marketing</span><span class="ticker-dot">&#8226;</span>
+        <span>Search Engine Optimization</span><span class="ticker-dot">&#8226;</span>
+        <span>Meta Ads</span><span class="ticker-dot">&#8226;</span>
+        <span>Google Ads</span><span class="ticker-dot">&#8226;</span>
+        <span>Branding</span><span class="ticker-dot">&#8226;</span>
+        <span>Social Media Management</span><span class="ticker-dot">&#8226;</span>
+        <span>Marketing</span><span class="ticker-dot">&#8226;</span>
+        <span>Search Engine Optimization</span><span class="ticker-dot">&#8226;</span>
+        <span>Meta Ads</span><span class="ticker-dot">&#8226;</span>
+        <span>Google Ads</span><span class="ticker-dot">&#8226;</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Ophelius Marketing</div>
+        <div class="footer-copyright">
+          <p>Copyright &copy; 2026 Ophelius Marketing</p>
+          <p>Powered by Ophelius Marketing</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Email</h3>
+        <p><a href="mailto:info@ophelius-marketing.com">info@ophelius-marketing.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Phone</h3>
+        <p><a href="tel:+36306295323">+36 30-629-5323</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) header.classList.add('scrolled');
+    });
+
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      navToggle.setAttribute('aria-expanded', 'true');
+    });
+    mobileClose.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  </script>
+</body>
+</html>

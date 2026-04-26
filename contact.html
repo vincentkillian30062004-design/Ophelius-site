@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Ophelius Marketing</title>
+  <meta name="description" content="Get in touch with Ophelius Marketing. Let's grow your business with strategic marketing, compelling content, and measurable results.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="page-wrap">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Ophelius Marketing">
+        <img src="assets/images/cropped-cropped-LOGO-1-1-365x122.png" alt="Ophelius Marketing" width="180">
+      </a>
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Posts</a></li>
+          <li><a href="gallery.html">Services</a></li>
+          <li><a href="biography.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile Navigation">
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="blogs.html">Posts</a>
+    <a href="gallery.html">Services</a>
+    <a href="biography.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===================== MAIN ===================== -->
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <p class="page-hero-label">Ophelius Marketing Agency</p>
+      <h1>Contact</h1>
+      <div class="page-hero-rule"></div>
+      <p class="page-hero-desc">Let's grow your business with strategic marketing, compelling content, and measurable results.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+      <div class="contact-inner">
+
+        <!-- LEFT: Info + Map -->
+        <div class="contact-left">
+          <h2>Get In Touch</h2>
+          <h5>Ready to increase your revenue and online presence?<br>
+          Send us a message and we'll get back to you within 24 hours.</h5>
+
+          <ul class="contact-info-list">
+            <li>
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg>
+              <span>+36306295323</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"/></svg>
+              <span>opheliusmarketing@gmail.com</span>
+            </li>
+          </ul>
+
+          <iframe
+            class="contact-map"
+            src="https://maps.google.com/maps?q=Budapest&t=m&z=13&output=embed&iwloc=near"
+            title="Budapest"
+            aria-label="Budapest"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-right">
+          <h5>Send A Message</h5>
+
+          <div class="form-success" id="form-success" role="alert">
+            Thank you! Your message has been sent. We'll get back to you within 24 hours.
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Name <span class="form-required" aria-hidden="true">*</span></label>
+              <input type="text" id="contact-name" name="name" required maxlength="100" autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email <span class="form-required" aria-hidden="true">*</span></label>
+              <input type="email" id="contact-email" name="email" required autocomplete="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message <span class="form-required" aria-hidden="true">*</span></label>
+              <textarea id="contact-message" name="message" required placeholder="Tell us about your business and what you'd like to achieve..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WORD TICKER -->
+    <section class="word-ticker-section">
+      <div class="word-ticker-track">
+        <span>Branding</span><span class="ticker-dot">&#8226;</span>
+        <span>Social Media Management</span><span class="ticker-dot">&#8226;</span>
+        <span>Marketing</span><span class="ticker-dot">&#8226;</span>
+        <span>Search Engine Optimization</span><span class="ticker-dot">&#8226;</span>
+        <span>Meta Ads</span><span class="ticker-dot">&#8226;</span>
+        <span>Google Ads</span><span class="ticker-dot">&#8226;</span>
+        <span>Branding</span><span class="ticker-dot">&#8226;</span>
+        <span>Social Media Management</span><span class="ticker-dot">&#8226;</span>
+        <span>Marketing</span><span class="ticker-dot">&#8226;</span>
+        <span>Search Engine Optimization</span><span class="ticker-dot">&#8226;</span>
+        <span>Meta Ads</span><span class="ticker-dot">&#8226;</span>
+        <span>Google Ads</span><span class="ticker-dot">&#8226;</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Ophelius Marketing</div>
+        <div class="footer-copyright">
+          <p>Copyright &copy; 2026 Ophelius Marketing</p>
+          <p>Powered by Ophelius Marketing</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Email</h3>
+        <p><a href="mailto:info@ophelius-marketing.com">info@ophelius-marketing.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Phone</h3>
+        <p><a href="tel:+36306295323">+36 30-629-5323</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Header stays dark on inner pages
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) header.classList.add('scrolled');
+    });
+
+    // Mobile menu
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileClose = document.getElementById('mobile-close');
+
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      navToggle.setAttribute('aria-expanded', 'true');
+    });
+    mobileClose.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+
+    // Form handler
+    const form = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.querySelector('#contact-name').value.trim();
+      const email = form.querySelector('#contact-email').value.trim();
+      const message = form.querySelector('#contact-message').value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      // Show success message
+      form.style.display = 'none';
+      formSuccess.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
