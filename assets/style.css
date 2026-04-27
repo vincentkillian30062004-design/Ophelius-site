@@ -228,6 +228,22 @@ main { flex: 1; }
   box-sizing: border-box;
 }
 
+.hero-cta {
+  display: inline-block;
+  margin-top: 32px;
+  background: #c9a84c;
+  color: #000;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 36px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.hero-cta:hover { opacity: 0.85; }
+
 /* Inner page hero (black bg with text) */
 .page-hero {
   background: #000000;
@@ -1358,7 +1374,7 @@ main { flex: 1; }
   .page-hero h1 { font-size: 2.2rem; }
   .page-hero-desc { font-size: 15px; }
   .gallery-strip { grid-template-columns: repeat(2, 1fr); }
-  .hero { min-height: 100svh; align-items: flex-end; padding-top: 0; padding-bottom: 48px; }
+  .hero { min-height: 100svh; align-items: flex-end; padding-top: 0; padding-bottom: 48px; background-position: top center; }
   .hero-content { padding-top: 0; padding-bottom: 0; }
   .hero-title { font-size: clamp(1.6rem, 7vw, 2.2rem); }
   .hero-subtitle { font-size: 1rem; margin: 16px 8px; padding: 8px; }
