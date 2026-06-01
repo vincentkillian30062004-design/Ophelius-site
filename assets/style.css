@@ -466,17 +466,11 @@ main { flex: 1; }
   border: 1px solid var(--border);
   background: #f9f8f5;
   overflow: hidden;
-}
-
-.result-card > img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+  border-top: 3px solid var(--gold);
 }
 
 .result-card-body {
-  padding: 24px;
+  padding: 32px 28px;
 }
 
 .result-card-img-wrap {
