@@ -777,6 +777,9 @@ main { flex: 1; }
   padding: 64px 24px 56px;
   font-family: Georgia, serif;
 }
+.faq-section .section-title { color: #111; }
+.faq-section .section-sublabel { color: var(--gold); }
+.faq-section .section-rule { background: var(--gold); }
 
 .faq-list {
   display: flex;
